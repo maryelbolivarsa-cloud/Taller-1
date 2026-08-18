@@ -4,7 +4,7 @@ Algoritmo Númeroparoimpar
 	Definir numero Como Entero
 	Definir esPar Como Logico
 	Leer numero
-	esPar<-numero MOD 2 = 0
+	esPar<- numero MOD 2 = 0
 	Escribir "Su número es par?"
 	Mostrar esPar
 FinAlgoritmo

@@ -1,0 +1,78 @@
+Algoritmo Calculadora
+		Escribir "Bienvendos a la calculadora de 2 a 3 números, donde segun el numero que elija, va a ser la operacion a realizar"
+		Escribir "Suma 1, Resta 2, Multiplicacion 3, Divion 4 (Solo para dos números)"
+		Leer opcionelegida
+		Si opcionelegida =1
+			Mostrar suma
+		SiNo
+		Si opcionelegida =2
+			Mostrar resta
+		SiNo
+		Si opcionelegida =3
+			Mostrar multiplicación
+		SiNo
+		Si opcionelegida =4
+			Mostrar división
+		SiNo
+		Si opcionelegida > 4 o opcionelegida < 1
+			Escribir "Error, no se encuentra operación"
+		FinSi
+	FinSi
+FinSi
+	FinSi
+FinSi
+Escribir  "Escriba la cantidad de números a operar"
+Leer cantidad
+	SI cantidad = 2 Entonces
+		Escribir "Digite su primer número"
+		Leer num1
+		Escribir "Digite su segundo número"
+		Leer num2 
+		Escribir "El resultado es"
+		Si opcionelegida = 1 Entonces
+			Escribir "El resultado es: ", num1+num2 
+		SiNo
+			Si opcionelegida = 2 Entonces
+				Escribir "El resultado es: ", num1-num2 
+			SiNo
+				Si opcionelegida = 3 Entonces
+					Escribir "El resultado es: ", num1* num2 
+				SiNo
+					Si opcionelegida = 4 Entonces
+						Escribir "La división solo se puede realizar con 2 números"
+						Si cantidad >3 y cantidad <3
+							Escribir "Error, demasiada cantidad de números"
+						Fin si
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+		SI cantidad =3 
+			Escribir "Digite su primer número"
+			Leer num1
+			Escribir "Digite su segundo número"
+			Leer num2 
+			Escribir "Digite su tercer número"
+			Leer num3 
+			Escribir "El resultado es"
+			Si opcionelegida = 1 Entonces
+				Escribir "El resultado es: ", num1+num2+num3
+			SiNo
+				Si opcionelegida = 2 Entonces
+					Escribir "El resultado es: ", num1-num2-num3
+				SiNo
+					Si opcionelegida = 3 Entonces
+						Escribir "El resultado es: ", num1*num2*num3
+					SiNo
+						Si opcionelegida = 4 Entonces
+							Escribir "Error,La división solo se puede realizar con 2 números"
+							Si cantidad >4 y cantidad <4
+								Escribir "Error, demasiada cantidad de números"
+							Fin si
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+FinAlgoritmo

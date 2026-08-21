@@ -23,7 +23,13 @@ FinSi
 FinSi
 Escribir  "Escriba la cantidad de números a operar"
 Leer cantidad
-	SI cantidad = 2 Entonces
+Si cantidad < 2 O cantidad > 3 Entonces
+    Escribir "Error, cantidad de números inválida"
+FinSi
+SI cantidad = 2 Entonces
+	Si cantidad >3 o cantidad <=1
+		Escribir "Error, cantidad de números invalida"
+	Fin si
 		Escribir "Digite su primer número"
 		Leer num1
 		Escribir "Digite su segundo número"
@@ -40,15 +46,15 @@ Leer cantidad
 				SiNo
 					Si opcionelegida = 4 Entonces
 						Escribir "La división solo se puede realizar con 2 números"
-						Si cantidad >3 y cantidad <3
-							Escribir "Error, demasiada cantidad de números"
-						Fin si
 					FinSi
 				FinSi
 			FinSi
 		FinSi
 	FinSi
-		SI cantidad =3 
+	SI cantidad =3 
+		Si cantidad <=4 o cantidad <= 1
+			Escribir "Error, cantidad de números invalida"
+		Fin si
 			Escribir "Digite su primer número"
 			Leer num1
 			Escribir "Digite su segundo número"
@@ -67,9 +73,6 @@ Leer cantidad
 					SiNo
 						Si opcionelegida = 4 Entonces
 							Escribir "Error,La división solo se puede realizar con 2 números"
-							Si cantidad >4 y cantidad <4
-								Escribir "Error, demasiada cantidad de números"
-							Fin si
 						FinSi
 					FinSi
 				FinSi
